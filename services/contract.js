@@ -344,12 +344,7 @@ function getRawContract() {
     (var-set options (list &{optionIds}))
     (var-set start u&{startAtBlock})
     (var-set end u&{endAtBlock})
-    &{optionResults}
-    
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;; Supporting Ballot.gg
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    (stx-transfer? u5000000 tx-sender '${Constants.STACKS_MAINNET_FLAG ? Constants.MAINNET_DONATION_ADDRESS : Constants.TESTNET_DONATION_ADDRESS})`;
+    &{optionResults}`
 }
 
 function getStrategyFunctionForBtcHolders() {
